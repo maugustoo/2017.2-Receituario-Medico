@@ -21,9 +21,9 @@ class HealthProfessionalForm(UserForm):
     """
 
     crm = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control s-form-v3__input',
-                                                        'placeholder': '* 00000'}))
+                                                        'placeholder': '00000'}))
     crm_state = forms.ChoiceField(widget=forms.Select(attrs={'class': 'form-control s-form-v3__input',
-                                                             'placeholder': '* Crm'}), choices=constants.UF_CHOICE)
+                                                             'placeholder': 'Crm'}), choices=constants.UF_CHOICE)
 
     class Meta:
         # Define model to form.

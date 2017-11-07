@@ -31,7 +31,7 @@ class RegisterPatientView(FormView):
             patient = patient_profile.patient
         except:
             messages.success(
-                request, 'Não há convites para esta conta!', extra_tags='alert')
+                request, 'Na a convites para esta conta!', extra_tags='alert')
             return redirect('/')
 
         # Defining the email field with the invitated patient email.
@@ -48,7 +48,7 @@ class RegisterPatientView(FormView):
             patient = patient_profile.patient
         except:
             messages.success(
-                request, 'Não há convites para esta conta!', extra_tags='alert')
+                request, 'Na a convites para esta conta!', extra_tags='alert')
             return redirect('/')
 
         # If the time to make the register is expired, a error message is

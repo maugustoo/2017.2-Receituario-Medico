@@ -7,7 +7,7 @@ class RecommendationPrescriptionForm(forms.Form):
     Form to associate recommendation to prescription.
     """
     recommendation = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control',
-                                                            'placeholder': 'Recomendação'}), required=False)
+                                                            'placeholder': 'Recomendacao'}), required=False)
 
     def clean(self, *args, **kwargs):
 

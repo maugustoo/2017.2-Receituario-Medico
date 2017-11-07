@@ -49,7 +49,7 @@ class LoginView(FormView):
             if user is not None:
                 return self.user_authentication(request, user)
             else:
-                message = 'O Usuário não foi encontrado em nossa base de dados.'
+                message = 'O Usuaio na foi encontrado em nossa base de dados.'
                 logger.debug("Exit post method.")
                 return render(request, self.template_name, {'form': form, 'message': message})
         else:

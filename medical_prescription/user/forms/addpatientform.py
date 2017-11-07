@@ -18,7 +18,7 @@ class AddPatientForm(forms.Form):
     Form to reset password User
     """
     email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form-control s-form-v4__input g-padding-l-0--xs',
-                                                            'placeholder': '* exemplo@exemplo.com'}))
+                                                            'placeholder': 'exemploexemplo.com'}))
 
     def clean(self, *args, **kwargs):
         """

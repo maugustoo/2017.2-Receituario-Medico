@@ -44,7 +44,7 @@ class ConfirmAccountView(View):
 
     # Sending email for account activation.
     def send_activation_account_email(email, UserActivateProfile):
-        email_subject = 'Confirmação de Conta'
+        email_subject = 'Confirmacao de Conta'
         email_body = """
                      Obrigado por se registrar. Para ativar sua conta, clique
                      neste link: http://localhost:8000/user/confirm/%s
@@ -64,7 +64,7 @@ class ConfirmAccountView(View):
         # If there is no user to be activated, an error message is displayed.
         except:
             messages.success(
-                request, 'Não existe um usuário para ser ativado ou a conta ja foi ativada!', extra_tags='alert')
+                request, 'Na existe um usaio para ser ativado ou a conta ja foi ativada!', extra_tags='alert')
             return redirect('/')
 
         user = user_profile.user

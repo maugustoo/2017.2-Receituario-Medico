@@ -30,23 +30,23 @@ class PatientForm(UserForm):
     CPF_document = BRCPFField(max_length=14, min_length=11,
                               widget=forms.TextInput(attrs={'class': 'form-control s-form-v3__input',
                                                             'type': 'number',
-                                                            'placeholder': '* 12345678911'}))
+                                                            'placeholder': '12345678911'}))
 
     CEP = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control s-form-v3__input',
-                                                        'placeholder': '* 12345678'}))
+                                                        'placeholder': '12345678'}))
 
     UF = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control s-form-v3__input',
-                                                       'placeholder': '* DF'}))
+                                                       'placeholder': 'DF'}))
 
     city = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control s-form-v3__input',
-                                                         'placeholder': '* Brasília'}))
+                                                         'placeholder': '* Braslia'}))
 
     neighborhood = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control s-form-v3__input',
-                                                                 'placeholder': '* Asa Norte'}))
+                                                                 'placeholder': 'Asa Norte'}))
 
     complement = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control s-form-v3__input',
                                                                'size': 200,
-                                                               'placeholder': '* Qd 70, Lt 8 Casa 2'}))
+                                                               'placeholder': 'Qd 70, Lt 8 Casa 2'}))
 
 
 

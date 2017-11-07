@@ -10,12 +10,12 @@ class EditForm(forms.ModelForm):
     recipe_name = forms.CharField(max_length=constants.MAX_LENGTH_NAME,
                                   widget=forms.TextInput(attrs={'class': 'form-control',
                                                                 'type': 'text',
-                                                                'placeholder': _('Nome da Fórmula')}))
+                                                                'placeholder': _('Nome da Formula')}))
 
     physical_form = forms.CharField(max_length=constants.MAX_LENGTH_PHYSICAL_FORM,
                                     widget=forms.TextInput(attrs={'class': 'form-control',
                                                                   'type': 'text',
-                                                                  'placeholder': _('Forma Física')}))
+                                                                  'placeholder': _('Forma Fisica')}))
 
     quantity = forms.FloatField(min_value=constants.MIN_VALUE_QUANTITY,
                                 widget=forms.TextInput(attrs={'class': 'form-control',
